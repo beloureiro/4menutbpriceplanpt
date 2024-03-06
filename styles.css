@@ -51,9 +51,7 @@ td:first-child {
 .nao-incluido {
     color: red; /* ícones 'X' em vermelho */
 }
-
-.icon {
-    font-size: 0.85em; /* reduzir o tamanho dos ícones */
-    display: inline-block; /* permite o controle de tamanho e alinhamento */
-    vertical-align: middle; /* alinha os ícones verticalmente ao meio */
+.incluido {
+    color: green; /* ícones 'X' em vermelho */
 }
+
