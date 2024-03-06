@@ -14,16 +14,14 @@ body {
 table {
     width: 100%; /* largura total da tabela */
     border-collapse: collapse; /* sem espaçamento entre bordas das células */
-    margin-bottom: 20px; /* espaço abaixo da tabela */
     border-radius: 20px; /* bordas arredondadas */
     overflow: hidden; /* esconde o conteúdo que exceda as bordas arredondadas */
-    background-color: #ffffff; /* fundo branco para contraste */
+    background-color: #333333; /* cor de fundo para combinar com o tema escuro */
 }
 
 th, td {
     padding: 10px; /* espaçamento interno para células */
-    text-align: center; /* centraliza o conteúdo das células */
-    font-size: 16px; /* tamanho da fonte aumentado */
+    font-size: 14px; /* tamanho da fonte reduzido */
 }
 
 th {
@@ -32,23 +30,23 @@ th {
 }
 
 td {
-    background-color: #f2f2f2; /* cor de fundo mais clara para as células */
-    color: #333333; /* texto mais escuro */
+    background-color: #262626; /* cor de fundo mais escura para as células */
+    color: #ffffff; /* texto branco */
+    border-bottom: 1px solid #2F2F2F; /* linha cinza escura abaixo de cada linha */
+}
+
+td:first-child {
+    text-align: left; /* alinhamento de texto à esquerda para a primeira coluna */
+}
+
+.centralizado {
+    text-align: center; /* centraliza o conteúdo das células dos planos */
 }
 
 .nao-incluido {
     color: red; /* ícones 'X' em vermelho */
 }
 
-.verificado {
-    color: #4caf50; /* ícones de verificação em verde discreto */
-}
-
-.texto-centro {
-    text-align: center; /* centraliza o texto */
-}
-
-/* Estilos adicionais para ícones e detalhes */
 .icon {
     font-size: 0.85em; /* reduzir o tamanho dos ícones */
     display: inline-block; /* permite o controle de tamanho e alinhamento */
