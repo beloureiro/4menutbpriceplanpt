@@ -1,0 +1,38 @@
+body {
+    background-color: #191919; /* fundo escuro para a página toda */
+    color: #ffffff; /* texto branco para legibilidade */
+    font-family: Arial, sans-serif; /* fonte padrão */
+}
+
+table {
+    width: 100%; /* largura total da tabela */
+    border-collapse: collapse; /* sem espaçamento entre bordas das células */
+    margin-bottom: 20px; /* espaço abaixo da tabela */
+}
+
+th, td {
+    padding: 12px 15px; /* espaçamento interno para células */
+    text-align: left; /* alinhamento de texto */
+    border: 1px solid #323232; /* bordas das células */
+}
+
+th {
+    background-color: #004d40; /* fundo escuro para cabeçalhos, tom escuro de verde */
+    color: #ffffff; /* texto branco */
+}
+
+tr:nth-child(even) {
+    background-color: #2d2d2d; /* fundo mais claro para linhas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #191919; /* fundo mais escuro para linhas ímpares */
+}
+
+.nao-incluido {
+    color: #ff4444; /* vermelho para elementos não incluídos */
+}
+
+.checkmark {
+    color: #00c853; /* verde claro para checkmarks */
+}
