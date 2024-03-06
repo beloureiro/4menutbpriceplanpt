@@ -4,67 +4,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-color: #f4f4f4; /* fundo mais claro para a página toda */
-    color: #333; /* texto escuro para legibilidade */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte moderna */
+    background-color: #262626; /* fundo escuro para a página toda */
+    color: #ffffff; /* texto branco para legibilidade */
+    font-family: Arial, sans-serif; /* fonte padrão */
 }
 
 table {
     width: 100%; /* largura total da tabela */
     border-collapse: collapse; /* sem espaçamento entre bordas das células */
-    margin: 20px 0; /* espaço acima e abaixo da tabela */
-    border-radius: 10px; /* bordas arredondadas para a tabela */
-    overflow: hidden; /* esconder o overflow para manter as bordas arredondadas */
-    background-color: #fff; /* fundo branco para a tabela */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* sombra leve para dar profundidade */
+    margin-bottom: 20px; /* espaço abaixo da tabela */
+    border-radius: 20px; /* bordas arredondadas */
+    overflow: hidden; /* esconde o conteúdo que exceda as bordas arredondadas */
+    background-color: #ffffff; /* fundo branco para contraste */
 }
 
 th, td {
-    padding: 15px; /* espaçamento interno maior para células */
-    text-align: center; /* centralizando texto */
-    font-size: 16px; /* tamanho de fonte maior */
+    padding: 10px; /* espaçamento interno para células */
+    text-align: center; /* centraliza o conteúdo das células */
+    font-size: 16px; /* tamanho da fonte aumentado */
 }
 
 th {
-    background-color: #007bff; /* fundo azul para cabeçalhos */
+    background-color: #333333; /* cor de fundo mais escura para os cabeçalhos */
     color: #ffffff; /* texto branco */
-    font-weight: normal; /* remove bold dos cabeçalhos */
 }
 
-tr:not(:last-child) td {
-    border-bottom: 2px solid #eeeeee; /* borda inferior mais visível para as linhas */
+td {
+    background-color: #f2f2f2; /* cor de fundo mais clara para as células */
+    color: #333333; /* texto mais escuro */
 }
 
 .nao-incluido {
-    color: red; /* cor vermelha para o texto 'X' */
+    color: red; /* ícones 'X' em vermelho */
 }
 
-/* Estilizando os ícones de verificação e cruzamento */
-td:not(.nao-incluido) {
-    color: #4CAF50; /* cor verde discreto para o texto de verificação */
+.verificado {
+    color: #4caf50; /* ícones de verificação em verde discreto */
 }
 
-/* Adicionar ícones mais discretos */
-td:before {
-    font-family: 'Font Awesome 5 Free'; /* usando font awesome para ícones */
-    content: '\f00c'; /* ícone de verificação do font awesome */
-    color: #4CAF50; /* cor verde discreto */
-    margin-right: 5px; /* espaço antes do texto */
+.texto-centro {
+    text-align: center; /* centraliza o texto */
 }
 
-td.nao-incluido:before {
-    content: '\f00d'; /* ícone de cruzamento do font awesome */
-    color: red; /* cor vermelha para o ícone 'X' */
+/* Estilos adicionais para ícones e detalhes */
+.icon {
+    font-size: 0.85em; /* reduzir o tamanho dos ícones */
+    display: inline-block; /* permite o controle de tamanho e alinhamento */
+    vertical-align: middle; /* alinha os ícones verticalmente ao meio */
 }
-
-/* Estilo para os preços e assinaturas para distingui-los um pouco */
-td.preco, td.assinatura {
-    font-weight: bold; /* texto em negrito para maior destaque */
-}
-
-/* Centraliza os elementos na última linha de acordo com os cabeçalhos */
-td:last-child {
-    text-align: center;
-}
-
