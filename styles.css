@@ -14,8 +14,8 @@ table {
     width: 100%; /* largura total da tabela */
     border-collapse: collapse; /* sem espaçamento entre bordas das células */
     margin-bottom: 0; /* remover espaço abaixo da tabela */
-    border-top-left-radius: 10px; /* borda arredondada superior esquerda */
-    border-top-right-radius: 10px; /* borda arredondada superior direita */
+    border-top-left-radius: 20px; /* borda arredondada superior esquerda */
+    border-top-right-radius: 20px; /* borda arredondada superior direita */
 }
 
 th, td {
