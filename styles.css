@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #191919; /* fundo escuro para a página toda */
+    background-color: #262626; /* fundo escuro para a página toda */
     color: #ffffff; /* texto branco para legibilidade */
     font-family: Arial, sans-serif; /* fonte padrão */
 }
@@ -17,22 +17,23 @@ table {
 }
 
 th, td {
-    padding: 12px 15px; /* espaçamento interno para células */
+    padding: 10px 15px; /* espaçamento interno para células */
     text-align: left; /* alinhamento de texto */
     border: 1px solid #323232; /* bordas das células */
+    font-size: 14px; /* tamanho da fonte */
 }
 
 th {
-    background-color: #004d40; /* fundo escuro para cabeçalhos, tom escuro de verde */
+    background-color: #23c573; /* fundo verde para cabeçalhos */
     color: #ffffff; /* texto branco */
 }
 
 tr:nth-child(even) {
-    background-color: #2d2d2d; /* fundo mais claro para linhas pares */
+    background-color: #363636; /* fundo mais escuro para linhas pares */
 }
 
 tr:nth-child(odd) {
-    background-color: #191919; /* fundo mais escuro para linhas ímpares */
+    background-color: #2d2d2d; /* fundo mais claro para linhas ímpares */
 }
 
 .nao-incluido {
@@ -40,5 +41,6 @@ tr:nth-child(odd) {
 }
 
 .checkmark {
-    color: #00c853; /* verde claro para checkmarks */
+    color: #23c573; /* verde para checkmarks */
+    font-size: 16px; /* tamanho da fonte para ícones */
 }
