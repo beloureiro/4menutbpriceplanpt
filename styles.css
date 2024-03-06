@@ -38,6 +38,11 @@ td {
 td:first-child {
     text-align: left; /* alinhamento de texto à esquerda para a primeira coluna */
 }
+.preco {
+    /* Adicione suas regras de estilo aqui, por exemplo: */
+    font-weight: bold; /* Negrito para os preços */
+    color: #4caf50; /* Cor verde para os preços, ou a cor que desejar */
+}
 
 .centralizado {
     text-align: center; /* centraliza o conteúdo das células dos planos */
