@@ -5,41 +5,66 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #262626; /* fundo escuro para a página toda */
-    color: #ffffff; /* texto branco para legibilidade */
-    font-family: Arial, sans-serif; /* fonte padrão */
+    background-color: #f4f4f4; /* fundo mais claro para a página toda */
+    color: #333; /* texto escuro para legibilidade */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte moderna */
 }
 
 table {
     width: 100%; /* largura total da tabela */
     border-collapse: collapse; /* sem espaçamento entre bordas das células */
-    margin-bottom: 0; /* remover espaço abaixo da tabela */
-    border-top-left-radius: 20px; /* borda arredondada superior esquerda */
-    border-top-right-radius: 20px; /* borda arredondada superior direita */
+    margin: 20px 0; /* espaço acima e abaixo da tabela */
+    border-radius: 10px; /* bordas arredondadas para a tabela */
+    overflow: hidden; /* esconder o overflow para manter as bordas arredondadas */
+    background-color: #fff; /* fundo branco para a tabela */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* sombra leve para dar profundidade */
 }
 
 th, td {
-    padding: 5px 10px; /* espaçamento interno para células */
-    text-align: left; /* alinhamento de texto padrão */
-    font-size: 14px; /* tamanho da fonte */
+    padding: 15px; /* espaçamento interno maior para células */
+    text-align: center; /* centralizando texto */
+    font-size: 16px; /* tamanho de fonte maior */
 }
 
 th {
-    background-color: #23c573; /* fundo verde para cabeçalhos */
-    color: #262626; /* texto preto */
-    text-align: center; /* alinhamento centralizado para cabeçalhos */
-}
-
-th:first-child,
-td:first-child {
-    text-align: left; /* alinhamento de texto à esquerda para a primeira coluna */
+    background-color: #007bff; /* fundo azul para cabeçalhos */
+    color: #ffffff; /* texto branco */
+    font-weight: normal; /* remove bold dos cabeçalhos */
 }
 
 tr:not(:last-child) td {
-    border-bottom: 1px solid #323232; /* adicionar borda inferior para todas as linhas, exceto a última */
+    border-bottom: 2px solid #eeeeee; /* borda inferior mais visível para as linhas */
 }
 
-tr:nth-child(even) td,
-tr:nth-child(odd) td {
-    background-color: transparent; /* remover a alternância de cores entre linhas */
+.nao-incluido {
+    color: red; /* cor vermelha para o texto 'X' */
 }
+
+/* Estilizando os ícones de verificação e cruzamento */
+td:not(.nao-incluido) {
+    color: #4CAF50; /* cor verde discreto para o texto de verificação */
+}
+
+/* Adicionar ícones mais discretos */
+td:before {
+    font-family: 'Font Awesome 5 Free'; /* usando font awesome para ícones */
+    content: '\f00c'; /* ícone de verificação do font awesome */
+    color: #4CAF50; /* cor verde discreto */
+    margin-right: 5px; /* espaço antes do texto */
+}
+
+td.nao-incluido:before {
+    content: '\f00d'; /* ícone de cruzamento do font awesome */
+    color: red; /* cor vermelha para o ícone 'X' */
+}
+
+/* Estilo para os preços e assinaturas para distingui-los um pouco */
+td.preco, td.assinatura {
+    font-weight: bold; /* texto em negrito para maior destaque */
+}
+
+/* Centraliza os elementos na última linha de acordo com os cabeçalhos */
+td:last-child {
+    text-align: center;
+}
+
