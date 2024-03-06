@@ -52,6 +52,6 @@ td:first-child {
     color: red; /* ícones 'X' em vermelho */
 }
 .incluido {
-    color: green; /* ícones 'X' em vermelho */
+    color: #4caf50; /* Cor verde */
 }
 
