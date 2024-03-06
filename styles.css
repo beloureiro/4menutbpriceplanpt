@@ -13,24 +13,33 @@ body {
 table {
     width: 100%; /* largura total da tabela */
     border-collapse: collapse; /* sem espaçamento entre bordas das células */
-    margin-bottom: 20px; /* espaço abaixo da tabela */
+    margin-bottom: 0; /* remover espaço abaixo da tabela */
     border-top-left-radius: 10px; /* borda arredondada superior esquerda */
     border-top-right-radius: 10px; /* borda arredondada superior direita */
 }
 
 th, td {
-    padding: 5px 15px; /* espaçamento interno para células */
-    text-align: left; /* alinhamento de texto */
-    border-bottom: 1px solid #323232; /* borda inferior das células */
+    padding: 5px 10px; /* espaçamento interno para células */
+    text-align: left; /* alinhamento de texto padrão */
     font-size: 14px; /* tamanho da fonte */
 }
 
 th {
     background-color: #23c573; /* fundo verde para cabeçalhos */
     color: #262626; /* texto preto */
+    text-align: center; /* alinhamento centralizado para cabeçalhos */
 }
 
-tr:nth-child(even),
-tr:nth-child(odd) {
+th:first-child,
+td:first-child {
+    text-align: left; /* alinhamento de texto à esquerda para a primeira coluna */
+}
+
+tr:not(:last-child) td {
+    border-bottom: 1px solid #323232; /* adicionar borda inferior para todas as linhas, exceto a última */
+}
+
+tr:nth-child(even) td,
+tr:nth-child(odd) td {
     background-color: transparent; /* remover a alternância de cores entre linhas */
 }
