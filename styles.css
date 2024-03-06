@@ -14,33 +14,23 @@ table {
     width: 100%; /* largura total da tabela */
     border-collapse: collapse; /* sem espaçamento entre bordas das células */
     margin-bottom: 20px; /* espaço abaixo da tabela */
+    border-top-left-radius: 10px; /* borda arredondada superior esquerda */
+    border-top-right-radius: 10px; /* borda arredondada superior direita */
 }
 
 th, td {
-    padding: 10px 15px; /* espaçamento interno para células */
+    padding: 5px 15px; /* espaçamento interno para células */
     text-align: left; /* alinhamento de texto */
-    border: 1px solid #323232; /* bordas das células */
+    border-bottom: 1px solid #323232; /* borda inferior das células */
     font-size: 14px; /* tamanho da fonte */
 }
 
 th {
     background-color: #23c573; /* fundo verde para cabeçalhos */
-    color: #ffffff; /* texto branco */
+    color: #262626; /* texto preto */
 }
 
-tr:nth-child(even) {
-    background-color: #363636; /* fundo mais escuro para linhas pares */
-}
-
+tr:nth-child(even),
 tr:nth-child(odd) {
-    background-color: #2d2d2d; /* fundo mais claro para linhas ímpares */
-}
-
-.nao-incluido {
-    color: #ff4444; /* vermelho para elementos não incluídos */
-}
-
-.checkmark {
-    color: #23c573; /* verde para checkmarks */
-    font-size: 16px; /* tamanho da fonte para ícones */
+    background-color: transparent; /* remover a alternância de cores entre linhas */
 }
